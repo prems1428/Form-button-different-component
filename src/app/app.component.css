@@ -1,0 +1,37 @@
+.container{
+    display:flex;
+    justify-content: center;
+}
+td{
+    text-align: center;
+}
+.my-icon{
+    font-size: 14px;
+    color: gray;
+    cursor: pointer;
+    margin-left: 10px;
+  }
+  .mytable{
+    border-collapse: collapse;
+    width: 100%;
+    text-align: left;
+  }
+  .mytable thead tr{
+    background: cyan;
+    min-height: 30px;
+    font-size: 18px;
+  }
+  .mytable tr{
+    text-align: center;
+    background-color:aquamarine;
+    border-bottom: 1px solid #ccc;
+  }  
+ .text-sucess{
+    color:blue;
+ }
+ .text-primary{
+    font-family: 'Courier New';
+ }
+ .text-dec{
+    padding: 5rem;
+ }

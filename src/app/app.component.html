@@ -1,0 +1,30 @@
+<div class="container">
+    <form #formRef [formGroup]="profileForm" (ngSubmit)="submitForm()" >
+       <label for="" >Enter Name</label><br>
+       <input type="text"  formControlName="Name"><br><br>
+       <label for="">Enter Age</label><br>
+       <input type="text" formControlName="Age"><br><br>
+       <label for="">Enter Contact Number</label><br>
+       <input type="text" formControlName="Contact"><br><br>
+    </form>
+</div><br><br>
+
+<app-child [getVal]="getValue" (displayVal)="displayValues()" > </app-child>
+
+
+<table class="mytable">
+    <thead>
+     <tr>
+        <th>NAME<i (click)="sortEvent($event)" class="my-icon fa fa-chevron-up"></i></th>
+        <th>AGE</th>
+        <th>CONTACT</th>
+     </tr>
+    </thead>
+    <tbody>
+     <tr *ngFor="let data of getValue ">
+         <td>{{data.Name}}</td>
+         <td>{{data.Age}}</td>
+         <td>{{data.Contact}}</td>
+     </tr>
+    </tbody>
+  </table>
